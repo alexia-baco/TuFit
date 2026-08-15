@@ -24,8 +24,10 @@ app.get('/', (req, res) => {
 // Rutas de la API
 const entrenadorRoutes = require('./routes/entrenadores');
 const sesionRoutes = require('./routes/sesiones');
+const contactoRoutes = require('./routes/contactos');
 app.use('/api/entrenadores', entrenadorRoutes);
 app.use('/api/sesiones', sesionRoutes);
+app.use('/api/contactos', contactoRoutes);
 
 // Arrancamos el servidor
 const PORT = process.env.PORT || 3000;
