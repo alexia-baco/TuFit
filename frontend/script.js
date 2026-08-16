@@ -126,3 +126,13 @@ async function cargarEntrenadores() {
     console.error(error);
   }
 }
+
+// ----- Menú hamburguesa (móvil) -----
+const botonMenu = document.getElementById('boton-menu');
+const menuNav = document.getElementById('menu-nav');
+
+if (botonMenu && menuNav) {
+  botonMenu.addEventListener('click', () => {
+    menuNav.classList.toggle('abierto');
+  });
+}
