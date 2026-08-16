@@ -227,3 +227,585 @@ footer {
 .enlace-whatsapp:hover {
   background-color: #1da851 !important;
 }
+
+/* ---------- SERVICIOS.html ---------- */
+/* ---------- Banner de páginas interiores ---------- */
+.banner-pagina {
+  background-color: var(--negro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* ---------- Filosofía (texto centrado) ---------- */
+.filosofia {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ---------- Los 4 pilares ---------- */
+.pilares {
+  padding: 20px 20px 60px 20px;
+  text-align: center;
+}
+
+.grid-pilares {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+}
+
+.pilar {
+  background: var(--blanco);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.pilar:hover {
+  transform: translateY(-6px);
+}
+
+.pilar h3 {
+  margin: 12px 0 8px 0;
+}
+
+/* ---------- Proceso en 3 pasos ---------- */
+.proceso {
+  background-color: var(--verde-claro);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.grid-proceso {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+}
+
+.numero-paso {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--verde);
+  color: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 12px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ---------- Lista de sesiones (cargadas desde el backend) ---------- */
+.sesiones-disponibles {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#lista-sesiones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  text-align: left;
+}
+
+.tarjeta-sesion {
+  background: var(--blanco);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta-sesion h3 {
+  color: var(--verde-oscuro);
+  margin-bottom: 8px;
+}
+
+/* ---------- CTA final ---------- */
+.cta-final {
+  background-color: var(--negro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-final h2 {
+  margin-bottom: 16px;
+}
+
+/* ---------- TARIFAS.html ---------- */
+/* ---------- Carrusel de precios ---------- */
+.carrusel-precios {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.carrusel-viewport {
+  overflow: hidden;
+  max-width: 340px;
+  margin: 40px auto 0 auto;
+}
+
+.carrusel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.tarjeta-precio {
+  flex: 0 0 100%;
+  background: var(--blanco);
+  padding: 32px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+.tarjeta-destacada {
+  border: 3px solid var(--verde);
+  box-shadow: 0 4px 16px rgba(67, 205, 126, 0.35);
+}
+
+.tarjeta-premium {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+.etiqueta-ribbon {
+  display: inline-block;
+  background-color: var(--verde);
+  color: var(--negro);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.precio-grande {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 12px 0 4px 0;
+}
+
+.precio-grande span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.precio-tachado {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.precio-total {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.detalle-precio,
+.letra-pequena {
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.carrusel-controles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.flecha-carrusel {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.flecha-carrusel:hover {
+  background-color: var(--verde-oscuro);
+}
+
+.flecha-carrusel:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ---------- FAQ (acordeón nativo con <details>) ---------- */
+.faq-tarifas {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.faq-tarifas h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.acordeon {
+  background: var(--blanco);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.acordeon summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.acordeon p {
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+/* ---------- EQUIPO ---------- */
+/* ---------- Perfil del equipo ---------- */
+.perfil-equipo {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.perfil-entrenador {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.foto-entrenador {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.texto-entrenador {
+  flex: 1;
+  min-width: 260px;
+}
+
+.cargo-entrenador {
+  color: var(--verde-oscuro);
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.titulo-especialidades {
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.lista-especialidades {
+  padding-left: 20px;
+}
+
+.lista-especialidades li {
+  margin-bottom: 4px;
+}
+
+/* ---------- Franja de transición ---------- */
+.transicion-frase {
+  background-color: var(--verde);
+  color: var(--negro);
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ---------- Casos de éxito ---------- */
+.casos-exito {
+  background-color: var(--verde-claro);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.grid-casos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  text-align: left;
+}
+
+.tarjeta-caso {
+  background: var(--blanco);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.perfil-cliente {
+  font-weight: bold;
+  color: var(--verde-oscuro);
+  margin-bottom: 8px;
+}
+
+.nota-placeholder {
+  margin-top: 24px;
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+}
+
+/* ---------- INSTALACIONES.html ----------*/
+/* ---------- Instalaciones ---------- */
+.info-instalacion {
+  padding: 60px 20px 20px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.texto-instalacion h2 {
+  color: var(--verde-oscuro);
+  margin-bottom: 20px;
+}
+
+.texto-instalacion p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+/* ---------- Agradecimiento al Club ---------- */
+.agradecimiento-club {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.caja-agradecimiento {
+  background-color: var(--verde-claro);
+  border-left: 6px solid var(--verde-oscuro);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.texto-agradecimiento {
+  flex: 1; /* Hace que el texto ocupe todo el espacio disponible */
+}
+
+.caja-agradecimiento h3 {
+  color: var(--verde-oscuro);
+  margin-bottom: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.caja-agradecimiento p {
+  margin-bottom: 12px;
+}
+
+.logo-agradecimiento img {
+  width: 180px; /* Puedes hacer este valor más grande o más pequeño según veas el logo */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Diseño Responsive para que en móviles el logo pase abajo (o arriba) */
+@media (max-width: 650px) {
+  .caja-agradecimiento {
+    flex-direction: column;
+    text-align: center;
+    border-left: none;
+    border-top: 6px solid var(--verde-oscuro); /* El borde pasa arriba para que quede mejor */
+  }
+}
+
+/* ---------- Mapa ---------- */
+.mapa-ubicacion {
+  padding: 40px 20px 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mapa-ubicacion h2 {
+  margin-bottom: 30px;
+}
+
+.mapa-contenedor {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.boton-secundario {
+  background-color: transparent;
+  border: 2px solid var(--blanco);
+  color: var(--blanco);
+  margin-left: 10px;
+}
+
+.boton-secundario:hover {
+  background-color: var(--blanco);
+  color: var(--negro);
+}
+
+/* ---------- CONTACTO.html ---------- */
+/* ---------- Contacto y Formulario ---------- */
+.bloque-contacto {
+  padding: 60px 20px;
+  background-color: var(--blanco);
+}
+
+.contenedor-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .contenedor-contacto {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-directa h2, .caja-formulario h2 {
+  color: var(--verde-oscuro);
+  margin-bottom: 20px;
+}
+
+.item-contacto {
+  margin-bottom: 24px;
+}
+
+.item-contacto strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--negro);
+}
+
+.item-contacto a {
+  color: var(--verde-oscuro);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.item-contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos del formulario */
+.caja-formulario {
+  background-color: var(--verde-claro);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.grupo-input {
+  margin-bottom: 20px;
+}
+
+.grupo-input label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.grupo-input input,
+.grupo-input select,
+.grupo-input textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.btn-formulario {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* ---------- Preguntas Frecuentes (FAQ) ---------- */
+.seccion-faq {
+  padding: 40px 20px 80px 20px;
+  background-color: var(--blanco);
+}
+
+.seccion-faq h2 {
+  text-align: center;
+  color: var(--verde-oscuro);
+  margin-bottom: 40px;
+}
+
+.contenedor-faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+details {
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+summary {
+  padding: 18px 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  list-style: none; /* Quita la flecha por defecto en algunos navegadores */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Quita la flecha en Chrome/Safari */
+}
+
+summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--verde-oscuro);
+  font-weight: bold;
+}
+
+details[open] summary::after {
+  content: '-';
+}
+
+.respuesta-faq {
+  padding: 0 20px 20px 20px;
+  color: #444;
+  line-height: 1.6;
+}
