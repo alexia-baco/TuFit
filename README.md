@@ -30,4 +30,3 @@ Puedes visitar la página web completamente funcional desplegada a través de Gi
 Estudiante del CFGS en Desarrollo de Aplicaciones Web (DAW) y desarrolladora apasionada por el frontend y el backend. Actualmente en búsqueda activa de oportunidades y primeras experiencias como Junior Web Developer en el área de Barcelona para seguir creciendo profesionalmente en el sector tecnológico.
 
 - LinkedIn: https://www.linkedin.com/in/alexiabaco/
-- [Enlace a tu Portfolio personal si lo tienes]
