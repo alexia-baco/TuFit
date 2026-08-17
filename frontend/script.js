@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://tufit-backend-xxxx.onrender.com/api';
 
 // ----- Sesiones (solo actúa si la página tiene #lista-sesiones, como servicios.html) -----
 const listaSesiones = document.getElementById('lista-sesiones');
