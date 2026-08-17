@@ -37,7 +37,7 @@ body {
 }
 
 .logo-img {
-  height: 90px;
+  height: 65px;
   width: auto;
   display: block;
 }
@@ -94,7 +94,11 @@ body {
 
 /* ---------- Hero ---------- */
 .hero {
-  background-color: var(--negro);
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.75)),
+    url('img/hero-inicio.jpg');
+  background-size: cover;
+  background-position: center;
   color: var(--blanco);
   text-align: center;
   padding: 120px 20px;
@@ -836,4 +840,12 @@ details[open] summary::after {
   .cabecera nav a {
     margin: 10px 0;
   }
+}
+
+.banner-pagina.con-foto {
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    var(--imagen-banner);
+  background-size: cover;
+  background-position: center;
 }
