@@ -87,6 +87,11 @@ body {
   border: 2px solid var(--blanco);
 }
 
+.boton-secundario:hover {
+  background-color: var(--blanco);
+  color: var(--negro);
+}
+
 /* ---------- Hero ---------- */
 .hero {
   background-color: var(--negro);
@@ -657,18 +662,6 @@ footer {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-
-.boton-secundario {
-  background-color: transparent;
-  border: 2px solid var(--blanco);
-  color: var(--blanco);
-  margin-left: 10px;
-}
-
-.boton-secundario:hover {
-  background-color: var(--blanco);
-  color: var(--negro);
 }
 
 /* ---------- CONTACTO.html ---------- */
