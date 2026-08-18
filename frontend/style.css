@@ -188,6 +188,12 @@ body {
   border-radius: 20px;
   font-weight: bold;
   margin: 16px 0;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.etiqueta-descuento:hover {
+  background-color: var(--verde-oscuro);
 }
 
 /* ---------- Footer ---------- */
@@ -848,4 +854,21 @@ details[open] summary::after {
     var(--imagen-banner);
   background-size: cover;
   background-position: center;
+}
+
+/* ---------- Tarjetas de servicio como enlaces ---------- */
+.tarjeta {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Evita que el menú fijo tape el pilar al hacer clic desde Inicio */
+.pilar {
+  scroll-margin-top: 100px;
+}
+
+/* Desplazamiento suave al saltar a un ancla, en vez de un salto brusco */
+html {
+  scroll-behavior: smooth;
 }

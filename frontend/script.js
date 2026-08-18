@@ -59,7 +59,11 @@ if (carruselTrack) {
   const tarjetas = carruselTrack.children;
   const flechaAnterior = document.getElementById('flecha-anterior');
   const flechaSiguiente = document.getElementById('flecha-siguiente');
-  let indiceActual = 0;
+
+  // Miramos si la URL trae un pack concreto que mostrar (ej: tarifas.html?pack=10)
+  const parametros = new URLSearchParams(window.location.search);
+  const indicesPack = { '1': 0, '5': 1, '10': 2, 'temporada': 3 };
+  let indiceActual = indicesPack[parametros.get('pack')] ?? 0;
 
   function actualizarCarrusel() {
     carruselTrack.style.transform = `translateX(-${indiceActual * 100}%)`;
