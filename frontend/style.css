@@ -872,3 +872,22 @@ details[open] summary::after {
 html {
   scroll-behavior: smooth;
 }
+
+/* ---------- Oferta: trae a un amigo ---------- */
+.oferta-amigo {
+  padding: 20px 20px 60px 20px;
+}
+
+.caja-oferta-amigo {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--verde-claro);
+  border: 2px solid var(--verde);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+}
+
+.caja-oferta-amigo p {
+  margin: 12px 0 20px 0;
+}
